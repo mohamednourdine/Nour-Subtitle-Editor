@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="297.0" prefWidth="613.0" styleClass="rootPane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nour.subtitle.editor.databaseOperation.SaveNewFileController">
+   <children>
+      <VBox layoutX="44.0" layoutY="55.0" prefHeight="279.0" prefWidth="536.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="44.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="Enter the details of the file." textAlignment="CENTER" wrappingWidth="493.13671875">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="57.0" prefWidth="514.0" styleClass="label-text">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Name of the File:" wrappingWidth="137.13671875">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="nameOfFile" prefHeight="23.0" prefWidth="356.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="57.0" prefHeight="56.0" prefWidth="514.0" styleClass="label-text">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Type of the Play:" wrappingWidth="137.13671875">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="typeOfPlay" prefHeight="37.0" prefWidth="367.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="59.0" prefWidth="514.0">
+               <children>
+                  <JFXButton fx:id="cancelBut" alignment="CENTER" buttonType="RAISED" onAction="#CancelOperation" prefHeight="39.0" prefWidth="101.0" styleClass="dark-blue" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="saveBut" alignment="CENTER" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#SaveNewSubtitle" prefHeight="39.0" prefWidth="95.0" styleClass="dark-blue" text="Save">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

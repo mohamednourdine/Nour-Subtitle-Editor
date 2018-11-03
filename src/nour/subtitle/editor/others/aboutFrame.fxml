@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="615.0" styleClass="rootPane" stylesheets="@../style/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="nour.subtitle.editor.others.AboutFrameController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/noursoft.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/nour.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <TabPane tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="About NourSoft Srt Translator">
+                     <content>
+                        <JFXTextArea editable="false" text="NourSoft SRT Automatic subtitles translation &#10;&#10;This is an application that translate automatically subtitle files from English to Turkish Language and vice versa. This application works perfectly on all operating systems. It is designed to quickly translate files and once the translation is completed, the user can manually edit/refine the translations if need be, and then export the translated subtitles back to the original format. This program will help the film lovers and producers to get instant translation of film subtitles and reduce the long task that has to do with translating all the fragments one by one. This application will make the translation automatically following the previous translations sources stored in the robust database that is set. You are equally given the opportunity to use the online translation engines to do the translations.  ">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                     </content>
+                  </Tab>
+                <Tab text="Thanks">
+                     <content>
+                        <JFXTextArea editable="false" text="&#10;I am very grateful to my university (Selçuk University) teachers who endlessly supported me during the development process of this application. &#10;&#10;My special thanks goes to Öğr.Gör. Alper Kiliç for his guide and contribution in this project. &#10;&#10;Many thanks to my family and friends for their moral support and contribution in the different ways. &#10;&#10;Thank you. &#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextArea>
+                     </content>
+                  </Tab>
+                  <Tab text="Licence">
+                     <content>
+                        <JFXTextArea editable="false" text="&#10;&#10;&#10;Copyright (C) 2018, 2018&#10;NourSoft SRT Translation Software.&#10;&#10; Selçuk University, Konya - Turkey&#10;&#10;Everyone is permitted to copy and distribute copies of this software. &#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextArea>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

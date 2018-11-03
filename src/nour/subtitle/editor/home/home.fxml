@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="1280.0" styleClass="homePane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nour.subtitle.editor.home.HomeController">
+   <children>
+      <VBox layoutX="13.0" layoutY="17.0">
+         <children>
+            <ImageView fitHeight="252.0" fitWidth="1251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/homepage-title.png" />
+               </image>
+            </ImageView>
+            <GridPane prefHeight="516.0" prefWidth="1251.0" stylesheets="@../style/style.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="TranslateBut" buttonType="RAISED" contentDisplay="TOP" onAction="#OpenTranslateView" prefHeight="248.0" prefWidth="622.0" styleClass="home-button" stylesheets="@../style/style.css" text="TRANSLATE SRT FILES">
+                     <graphic>
+                        <ImageView fitHeight="189.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/translate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="uploadBut" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="-3.0" onAction="#OpenUploadView" prefHeight="234.0" prefWidth="624.0" styleClass="home-button" stylesheets="@../style/style.css" text="EDIT SRT FILES" GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="187.0" fitWidth="263.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="aboutBut" buttonType="RAISED" contentDisplay="TOP" layoutX="636.0" layoutY="-3.0" onAction="#OpenAboutScene" prefHeight="234.0" prefWidth="624.0" styleClass="home-button" stylesheets="@../style/style.css" text="ABOUT THE SOFTWARE" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="189.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/about.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="settingBut" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="230.0" onAction="#OpenSettingsScene" prefHeight="234.0" prefWidth="624.0" styleClass="home-button" stylesheets="@../style/style.css" text="GENERAL SETTINGS" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="189.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/setting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

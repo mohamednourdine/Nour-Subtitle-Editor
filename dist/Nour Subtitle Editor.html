@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Nour Subtitle Editor.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iTm91ciBTdWJ0aXRsZSBFZGl0b3Iuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+Tm91ciBTdWJ0aXRsZSBFZGl0b3I8L3RpdGxlPg0KICAgIDx2ZW5kb3I+Tm91clNvZnQ8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0ibGliXGNvbnRyb2xzZngtOC4wLjEuamFyIiBzaXplPSIyOTYzNDciIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxmb250YXdlc29tZWZ4LTguOS5qYXIiIHNpemU9IjU3MTA2OCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGZvbnRhd2Vzb21lZngtZ2x5cGhzYnJvd3Nlci1hbGwtMS4wLmphciIgc2l6ZT0iMTY2MjQ4MyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpmb2VuaXguamFyIiBzaXplPSIyMzg0NTIwIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtMy4xLjEwLWJpbi5qYXIiIHNpemU9IjQxODY5OCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy1hcGFjaGUtY29tbW9ucy1sYW5nLmphciIgc2l6ZT0iMjYxNDI2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcc3J0LXRyYW5zbGF0b3IuamFyIiBzaXplPSIzMzg4MTQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxzdGFuZm9yZC1jb3JlbmxwLTMuOS4xLW1vZGVscy5qYXIiIHNpemU9IjM2MjU3MjI2MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXHN0YW5mb3JkLWNvcmVubHAtMy45LjEuamFyIiBzaXplPSI4MDkyNTk3IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcemVtYmVyZWstY2VraXJkZWstMi4xLmphciIgc2l6ZT0iMTg3MTI5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9Ik5vdXIgU3VidGl0bGUgRWRpdG9yIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0ibm91ci5zdWJ0aXRsZS5lZGl0b3IudXBsb2FkLm1haW4iICBuYW1lPSJOb3VyIFN1YnRpdGxlIEVkaXRvciIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbednour.subtitle.editor.upload() {
+        dtjava.embed(
+            {
+                id : 'nour.subtitle.editor.upload',
+                url : 'Nour Subtitle Editor.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iTm91ciBTdWJ0aXRsZSBFZGl0b3Iuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+Tm91ciBTdWJ0aXRsZSBFZGl0b3I8L3RpdGxlPg0KICAgIDx2ZW5kb3I+Tm91clNvZnQ8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0ibGliXGNvbnRyb2xzZngtOC4wLjEuamFyIiBzaXplPSIyOTYzNDciIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxmb250YXdlc29tZWZ4LTguOS5qYXIiIHNpemU9IjU3MTA2OCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGZvbnRhd2Vzb21lZngtZ2x5cGhzYnJvd3Nlci1hbGwtMS4wLmphciIgc2l6ZT0iMTY2MjQ4MyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGpmb2VuaXguamFyIiBzaXplPSIyMzg0NTIwIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtMy4xLjEwLWJpbi5qYXIiIHNpemU9IjQxODY5OCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy1hcGFjaGUtY29tbW9ucy1sYW5nLmphciIgc2l6ZT0iMjYxNDI2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcc3J0LXRyYW5zbGF0b3IuamFyIiBzaXplPSIzMzg4MTQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxzdGFuZm9yZC1jb3JlbmxwLTMuOS4xLW1vZGVscy5qYXIiIHNpemU9IjM2MjU3MjI2MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXHN0YW5mb3JkLWNvcmVubHAtMy45LjEuamFyIiBzaXplPSI4MDkyNTk3IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcemVtYmVyZWstY2VraXJkZWstMi4xLmphciIgc2l6ZT0iMTg3MTI5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9Ik5vdXIgU3VidGl0bGUgRWRpdG9yIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0ibm91ci5zdWJ0aXRsZS5lZGl0b3IudXBsb2FkLm1haW4iICBuYW1lPSJOb3VyIFN1YnRpdGxlIEVkaXRvciIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbednour.subtitle.editor.upload);
+</script>
+
+</head><body>
+<h2>Test page for <b>Nour Subtitle Editor</b></h2>
+  <b>Webstart:</b> <a href='Nour Subtitle Editor.jnlp' onclick="return launchApplication('Nour Subtitle Editor.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

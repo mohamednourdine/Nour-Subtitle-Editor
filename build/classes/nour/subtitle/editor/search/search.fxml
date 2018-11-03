@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="808.0" styleClass="rootPane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nour.subtitle.editor.search.SearchController">
+   <children>
+      <VBox layoutX="22.0" layoutY="22.0" prefHeight="418.0" prefWidth="786.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <HBox prefHeight="137.0" prefWidth="786.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Enter the text" textAlignment="CENTER" wrappingWidth="123.13671875">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="50.0" />
+                     </HBox.margin></Text>
+                  <TextArea fx:id="searchTextArea" prefHeight="96.0" prefWidth="616.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="642.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Choice the Language" textAlignment="CENTER" wrappingWidth="228.13671875">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="150.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ChoiceBox fx:id="subLanguage" prefHeight="25.0" prefWidth="160.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <JFXButton fx:id="searchBut" alignment="CENTER" onAction="#SearchForSubtile" prefHeight="23.0" prefWidth="73.0" styleClass="dark-blue" text="Seach">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <VBox>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="English Resutls" textAlignment="CENTER" wrappingWidth="123.13671875">
+                           <HBox.margin>
+                              <Insets left="140.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Turkish Results" textAlignment="CENTER" wrappingWidth="123.13671875">
+                           <HBox.margin>
+                              <Insets left="180.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="316.0" prefWidth="754.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-text" text="Results Found" textAlignment="CENTER" wrappingWidth="123.13671875">
+                           <HBox.margin>
+                              <Insets left="10.0" top="70.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TableView fx:id="subtileSearch" prefHeight="295.0" prefWidth="597.0">
+                          <columns>
+                            <TableColumn fx:id="englishSearchResult" prefWidth="310.0" text="English" />
+                            <TableColumn fx:id="turkishSearchResult" minWidth="0.0" prefWidth="310.0" text="Turkish" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="79.0" prefWidth="727.0">
+               <children>
+                  <JFXButton fx:id="cancelBut" onAction="#cancelOperation" prefHeight="44.0" prefWidth="125.0" styleClass="dark-blue" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="30.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 2, 2017, 12:51:27 PM
+    Author     : NourSoft
+*/
+
+.label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.label-text {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-text-color: blue;
+    -fx-padding: 0 10 ;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+   
+}
+.title-text {
+    -fx-font-size: 14px;
+    -fx-background-color: red;
+    -fx-font-weight: 800;
+    -fx-text-color: blue;
+    -fx-fill: #090a0c;
+    -fx-border-color: #E8E8E8 transparent transparent transparent;
+     -fx-background-color: teal;
+}
+.rootPane
+{
+
+  -fx-border-insets: 10;
+
+  -fx-background-insets: 10;
+
+  -fx-background-radius: 2;
+
+  -fx-border-radius: 2;
+
+  -fx-border-color: gray;
+
+  -fx-border-style: solid;
+
+  -fx-border-width: 1;
+
+  /*-fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);*/
+  /*-fx-background-image: url("nour/subtitle/editor/images/background-home.jpg");*/
+ /*-fx-control-inner-background:  rgb(50, 50, 50);*/
+
+ -fx-background-color: skyblue, derive(skyblue, 85%);
+    
+}
+.tab {
+/*-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));*/
+ -fx-background-color: skyblue, derive(skyblue, 50%);
+}
+.menubar {
+/*-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));*/
+ -fx-background-color: skyblue, derive(skyblue, 25%);
+ -fx-font-family: "Arial";
+ -fx-text-fill: linear-gradient(white, #d0d0d0);
+ -fx-font-size: 18px;
+ 
+ 
+ 
+}
+
+.choiceBox{
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    
+}
+.dark-blue {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    
+  
+}
+.dark-blue:hover {
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-background-color: #02593d, derive(#02593d, 75%);
+}
+.dark-blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+
+.vbox{
+    -fx-background-color: skyblue, derive(skyblue, 85%);
+     -fx-padding: 20px;
+     -fx-text-fill: #ff6699;
+       -fx-font-size: 25px;
+}
+
+.home-button {
+   -fx-border-insets: 10;
+
+  -fx-background-insets: 10;
+
+  -fx-background-radius: 2;
+
+  -fx-border-radius: 2;
+
+  -fx-border-color: gray;
+
+  -fx-border-style: solid;
+
+  -fx-border-width: 1;
+
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+  /*-fx-background-image: url("nour/subtitle/editor/images/background-home.jpg");*/
+  -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+  
+    
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-border-color: #E8E8E8 transparent transparent transparent;
+   
+}
+
+.home-button:hover {
+   -fx-border-insets: 10;
+
+  -fx-background-insets: 10;
+
+  -fx-background-radius: 2;
+
+  -fx-border-radius: 2;
+
+  -fx-border-color: gray;
+
+  -fx-border-style: solid;
+
+  -fx-border-width: 1;
+
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+  /*-fx-background-image: url("nour/subtitle/editor/images/background-home.jpg");*/
+  -fx-background-color: skyblue, derive(skyblue, 25%);
+}
+
+.homePane
+{
+
+  -fx-border-insets: 10;
+
+  -fx-background-insets: 10;
+
+  -fx-background-radius: 2;
+
+  -fx-border-radius: 2;
+
+  -fx-border-color: gray;
+
+  -fx-border-style: solid;
+
+  -fx-border-width: 1;
+
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+  /*-fx-background-image: url("nour/subtitle/editor/images/background-home.jpg");*/
+  -fx-background-color: skyblue, derive(skyblue, 25%);
+
+
+    
+}
+
+.textAreas{
+  -fx-font-size: 18px;
+  -fx-text-fill: #333333;
+  -fx-border-style: solid;
+  -fx-padding: 10;
+  -fx-border-radius: 2;
+  -fx-border-width: 1;
+  -fx-background-color: grey, derive(skyblue, 25%);
+}
+

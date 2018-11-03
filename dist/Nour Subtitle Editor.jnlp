@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Nour Subtitle Editor.jnlp">
+  <information>
+    <title>Nour Subtitle Editor</title>
+    <vendor>NourSoft</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\controlsfx-8.0.1.jar" size="296347" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-all-1.0.jar" size="1662483" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2384520" download="eager" />
+    <jar href="lib\mysql-connector-java-3.1.10-bin.jar" size="418698" download="eager" />
+    <jar href="lib\org-apache-commons-lang.jar" size="261426" download="eager" />
+    <jar href="lib\srt-translator.jar" size="338814" download="eager" />
+    <jar href="lib\stanford-corenlp-3.9.1-models.jar" size="362572260" download="eager" />
+    <jar href="lib\stanford-corenlp-3.9.1.jar" size="8092597" download="eager" />
+    <jar href="lib\zemberek-cekirdek-2.1.jar" size="187129" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Nour Subtitle Editor" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="nour.subtitle.editor.upload.main"  name="Nour Subtitle Editor" />
+  <update check="always"/>
+</jnlp>

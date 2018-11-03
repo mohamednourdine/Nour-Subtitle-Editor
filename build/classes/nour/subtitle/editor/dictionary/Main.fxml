@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="894.0" styleClass="rootPane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nour.subtitle.editor.dictionary.DictionaryController">
+    <children>
+      <VBox layoutX="22.0" layoutY="22.0" prefHeight="510.0" prefWidth="849.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="856.0">
+               <children>
+                    <Label prefHeight="36.0" prefWidth="161.0" styleClass="label-text" text="Source language:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Label>
+                    <ChoiceBox fx:id="sourceLangCbox" prefHeight="30.0" prefWidth="168.0" value="Auomatic Detection">
+            			<items>
+            				<FXCollections fx:factory="observableArrayList">
+            					<String fx:value="English" />
+            					<String fx:value="Turkish" />
+            					<String fx:value="Auto Detect" />
+            					<String fx:value="Not Set" />
+            				</FXCollections>
+            			</items>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+            		</ChoiceBox>
+                    <Label prefHeight="36.0" prefWidth="164.0" styleClass="label-text" text="Purpose language:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Label>
+                    <ChoiceBox fx:id="destLangCbox" prefHeight="30.0" prefWidth="164.0" value="Turkish Language">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="English" />
+                                <String fx:value="Turkish" />
+                                <String fx:value="Not Set" />
+                            </FXCollections>
+                        </items>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                    </ChoiceBox>
+                    <Button fx:id="speakButton" mnemonicParsing="false" onAction="#speak" prefHeight="33.0" prefWidth="167.0" styleClass="dark-blue" text="Read aloud">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="360.0" prefWidth="827.0">
+               <children>
+                  <JFXTextArea fx:id="inputText" prefHeight="359.0" prefWidth="433.0" promptText="Enter the text" scrollLeft="10.0" scrollTop="10.0" styleClass="textAreas" unFocusColor="#014a05">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXTextArea>
+                  <JFXTextArea fx:id="resultText" layoutX="10.0" layoutY="10.0" prefHeight="175.0" prefWidth="404.0" promptText="Translation Result" scrollLeft="10.0" scrollTop="10.0" styleClass="textAreas" unFocusColor="#014a05">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXTextArea>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                    <Button fx:id="translateButton" mnemonicParsing="false" onAction="#translate" prefHeight="25.0" prefWidth="297.0" styleClass="home-button" text="Translate" />
+                    <Button mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="267.0" styleClass="home-button" text="shut down" />
+                    <Button mnemonicParsing="false" onAction="#showSettingPanel" prefHeight="25.0" prefWidth="290.0" styleClass="home-button" text="Proxy settings" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

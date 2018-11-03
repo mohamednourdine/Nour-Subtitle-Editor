@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="769.0" prefWidth="1308.0" styleClass="rootPane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nour.subtitle.editor.upload.mainController">
+   <children>
+      <BorderPane prefHeight="668.0" prefWidth="1014.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="98.0" prefWidth="992.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="24.0" prefWidth="1282.0" styleClass="menubar" stylesheets="@../style/style.css">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Tools">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+                  <ToolBar prefHeight="44.0" prefWidth="1286.0" styleClass="tab" stylesheets="@../style/style.css">
+                     <items>
+                        <JFXButton fx:id="newBut" buttonType="RAISED" onAction="#loadData" styleClass="dark-blue" text="Upload">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/new.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="14.0" styleClass="dark-blue" text="Open">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/load.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="14.0" styleClass="dark-blue" text="Save">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/save.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="14.0" styleClass="dark-blue" text="Properties">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/info.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="14.0" styleClass="dark-blue" text="Copy">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/copy.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="220.0" layoutY="14.0" styleClass="dark-blue" text="Paste">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/paste.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="327.0" layoutY="14.0" styleClass="dark-blue" text="Undo">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/undo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="401.0" layoutY="14.0" styleClass="dark-blue" text="Redo">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/redo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </items>
+                  </ToolBar>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text fx:id="enFileName" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="625.22265625">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="trFileName" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="625.22265625">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <right>
+            <VBox alignment="TOP_RIGHT" prefHeight="506.0" prefWidth="149.0" styleClass="vbox" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="700.0" prefWidth="159.0">
+                     <children>
+                        <Text focusTraversable="true" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="TABLE OPERATIONS" textAlignment="CENTER" wrappingWidth="157.64453125">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.3476190476190476">
+                                 <stops>
+                                    <Stop color="#941b1b" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ChoiceBox fx:id="fileType" prefHeight="25.0" prefWidth="165.0" styleClass="choiceBox">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                        <JFXButton fx:id="uploadBut" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="RIGHT" nodeOrientation="LEFT_TO_RIGHT" onAction="#OpenSaveWindow" prefHeight="25.0" prefWidth="154.0" styleClass="dark-blue" text="Upload to Database">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="seachForSub" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="RIGHT" layoutX="20.0" layoutY="52.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#SeachForSubtitle" prefHeight="25.0" prefWidth="154.0" styleClass="dark-blue" text="Seach for Subtitle">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="homeBut" buttonType="RAISED" onAction="#goToHomeFrame" prefHeight="66.0" prefWidth="164.0" styleClass="home-button" stylesheets="@../style/style.css" text="HOME">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="700.0" prefWidth="159.0">
+                     <children>
+                        <ImageView fitHeight="161.0" fitWidth="159.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <HBox prefHeight="117.0" prefWidth="1282.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="75.0" prefWidth="90.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="dark-blue" text="Start">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="8.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="dark-blue" text="End">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="8.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="141.0">
+                     <children>
+                        <JFXTextField fx:id="startTime" styleClass="label" text="00:00:00,000" />
+                        <JFXTextField fx:id="endTime" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="112.0" styleClass="label" text="00:00:00,000" />
+                     </children>
+                  </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox prefHeight="71.0" prefWidth="363.0">
+                           <children>
+                              <TextArea fx:id="enSub" nodeOrientation="LEFT_TO_RIGHT" prefHeight="71.0" prefWidth="473.0">
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </TextArea>
+                              <TextArea fx:id="trSub" layoutX="10.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="71.0" prefWidth="472.0">
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="500.0" style="-fx-background-color: none;">
+                           <children>
+                              <JFXButton fx:id="saveSub" onAction="#editSubTitles" styleClass="dark-blue" text="SAVE">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+           
+         </center>
+         <center>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="number" maxWidth="100.0" minWidth="20.0" prefWidth="70.0" text="Number" />
+                 <TableColumn fx:id="startTimes" maxWidth="200.0" minWidth="150.0" prefWidth="-1.0" text="Start Time" />
+                  <TableColumn fx:id="endTimes" maxWidth="200.0" minWidth="150.0" prefWidth="-1.0" text="End Time" />
+                  <TableColumn fx:id="english" maxWidth="-1.0" minWidth="300.0" prefWidth="-1.0" text="English" />
+                  <TableColumn fx:id="turkish" maxWidth="-1.0" minWidth="300.0" prefWidth="-1.0" text="Turkish" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

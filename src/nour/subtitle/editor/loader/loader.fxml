@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="229.0" prefWidth="314.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="nour.subtitle.editor.loader.LoaderController">
+    <stylesheets>
+        <URL value="@/nour/subtitle/editor/style/style.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="229.0" fitWidth="314.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="314.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@loader.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
